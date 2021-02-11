@@ -71,3 +71,9 @@ chapter6.after(annexesA);
 annexesA.after(annexesB);
 annexesB.after(annexesC);
 
+//в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
+let chapter8 = document.createElement('li');
+chapter8.innerHTML = "Глава 8: За пределами ES6";
+booksContainerItems[5].append(chapter8);
+chapter8.after(booksContainerItems[5].getElementsByTagName('li')[9]);
+console.log(booksContainerItems[5].getElementsByTagName('li'));	
